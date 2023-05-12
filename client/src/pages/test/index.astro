@@ -1,0 +1,29 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import HttpCommon from '../../lib/HttpCommon';
+
+const json = await HttpCommon.post({}, "/test/get_list");
+console.log(json);
+---
+
+<Layout title="Welcome to Astro.">
+	<div class="container">
+		<h3>test</h3>
+		<hr />
+		<button id="btn_put" class="btn btn-primary">Put
+		</button>		
+		<hr />
+		<button id="btn_get" class="btn btn-primary">Get
+		</button>		
+		<hr />
+		<button id="btn_delete" class="btn btn-primary">Delete
+		</button>		
+		<hr />				
+	</div>
+
+</Layout>
+
+<style>
+</style>
+<!-- -->
+<script src="./Test.ts"></script>

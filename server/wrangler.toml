@@ -3,9 +3,5 @@ main = "src/index.ts"
 compatibility_date = "2023-05-03"
 
 [vars]
-API_KEY = "1683084135400-424621"
+API_KEY = ""
 
-[[ d1_databases ]]
-binding = "DB" # i.e. available in your Worker on env.DB
-database_name = "my-d5"
-database_id = "6c47e361-277e-4911-b34b-258dc8cf1e8a"
